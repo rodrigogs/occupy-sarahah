@@ -14,7 +14,7 @@ Usage
 
 Just type **saraha** and a list of profiles that you want to flood with messages.
 
-> ```$ saraha bruno marcio maria lucia -t 5```  
+> ```$ saraha bruno marcio maria lucia -i 5```  
 
 Options
 -------
