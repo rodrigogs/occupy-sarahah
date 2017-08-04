@@ -1,6 +1,6 @@
 # occupy-sarahah
 
-Flood [sarahah](sarahah.com) profiles with random messages.
+Flood [sarahah](https://sarahah.com) profiles with random messages.
 
 Install
 -------
