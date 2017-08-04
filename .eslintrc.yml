@@ -1,0 +1,26 @@
+extends: airbnb-base
+plugins:
+  - import
+rules:
+  no-shadow: off
+  no-console: off
+  import/no-dynamic-require: off
+  global-require: off
+  no-param-reassign: off
+  consistent-return: off
+  arrow-body-style: off
+  no-underscore-dangle: off
+  import/extensions: off
+  no-bitwise: off
+  no-new: off
+  no-unused-expressions: off
+globals:
+  process: on
+  describe: on
+  before: on
+  beforeEach: on
+  after: on
+  afterEach: on
+  suite: on
+  test: on
+  it: on

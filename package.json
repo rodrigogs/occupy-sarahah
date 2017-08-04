@@ -1,0 +1,30 @@
+{
+  "name": "sarahah",
+  "description": "Sarahah flodder",
+  "version": "1.2.0",
+  "main": "index.js",
+  "preferGlobal": true,
+  "repository": "git@github.com:rodrigogs/occupy-sarahah.git",
+  "author": {
+    "name": "Rodrigo Gomes da Silva",
+    "email": "rodrigo.smscom@gmail.com",
+    "url": "https://github.com/rodrigogs"
+  },
+  "license": "BSD-3-Clause",
+  "scripts": {
+    "eslint": "eslint . --ext .js"
+  },
+  "bin": {
+    "sarahah": "bin/sarahah"
+  },
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0"
+  },
+  "dependencies": {
+    "commander": "^2.11.0",
+    "debug": "^2.6.8",
+    "lerolero": "0.0.1"
+  }
+}
