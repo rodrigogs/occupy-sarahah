@@ -1,7 +1,7 @@
 {
   "name": "sarahah",
   "description": "Sarahah flodder",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "main": "index.js",
   "preferGlobal": true,
   "repository": "git@github.com:rodrigogs/occupy-sarahah.git",
@@ -26,5 +26,8 @@
     "commander": "^2.11.0",
     "debug": "^2.6.8",
     "lerolero": "0.0.1"
+  },
+  "engines": {
+    "node": ">=7.6.0"
   }
 }

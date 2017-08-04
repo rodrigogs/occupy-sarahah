@@ -7,6 +7,8 @@ Install
 
 > ```$ npm install sarahah -g```
 
+**Note:** You must have [Node.js](https://nodejs.org/en/) 7.6 > installed.
+
 Usage
 -----
 
