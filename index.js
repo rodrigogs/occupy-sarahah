@@ -2,20 +2,26 @@ const debug = require('debug')('occupy-sarahah:index');
 const Sarahah = require('./lib/sarahah');
 const lerolero = require('lerolero');
 
-function flood(profile, interval) {
+let openPages = 0;
+
+async function flood(profile, interval) {
   debug(`starting flooder for profile ${profile} with interval ${interval}`);
+
   setInterval(async () => {
-    try {
-      const info = await Sarahah.getProfileInfo(profile);
-      await Sarahah.postMessage({
-        profile,
-        cookies: info.cookies,
-        token: info.token,
-        id: info.id,
-        message: lerolero(),
-      });
-    } catch (err) {
-      console.log(err.message);
+    if (openPages < 10) {
+      try {
+        openPages += 1;
+        await Sarahah.postMessage({
+          profile,
+          message: lerolero(),
+        });
+      } catch (err) {
+        console.log(err.message);
+      } finally {
+        openPages -= 1;
+      }
+    } else {
+      debug('too much open pages, not opening page for', profile);
     }
   }, interval || 5000);
 }
@@ -25,4 +31,7 @@ function flood(profile, interval) {
  * @param {String[]} users
  * @param {Number} interval
  */
-module.exports = (users, interval) => users.forEach(user => flood(user, interval));
+module.exports = (users, interval) => {
+  Sarahah.initialize()
+    .then(() => users.forEach(user => flood(user, interval)));
+};

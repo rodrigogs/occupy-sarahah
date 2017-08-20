@@ -14,6 +14,7 @@ rules:
   no-bitwise: off
   no-new: off
   no-unused-expressions: off
+  no-await-in-loop: off
 globals:
   process: on
   describe: on
