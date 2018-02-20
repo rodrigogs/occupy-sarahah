@@ -1,4 +1,4 @@
-# occupy-sarahah
+# occupy-sarahah (no longer working)
 
 Flood [sarahah](https://sarahah.com) profiles with random messages.
 
